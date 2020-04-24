@@ -1,0 +1,22 @@
+
+name: MY-FIRST-ACTION
+
+on:
+  push:
+    branches:
+      - master
+    
+jobs:
+  testing_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: string HELLO WORLD
+      run: Echo "Hello, world! from testing
+       
+  deploy_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: string HELLO WORLD
+      - run: echo Hello world from deploy  
